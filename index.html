@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>中检华通威数据统计中心</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">HTW</div>
+          <div>
+            <strong>数据统计中心</strong>
+            <span>中检华通威</span>
+          </div>
+        </div>
+        <nav id="moduleNav" class="nav"></nav>
+      </aside>
+
+      <main class="workspace">
+        <header class="topbar">
+          <div>
+            <h1 id="pageTitle">整体经营总览</h1>
+          </div>
+        </header>
+
+        <section id="summaryCards" class="metric-grid"></section>
+
+        <section id="moduleContent" class="module-content"></section>
+      </main>
+    </div>
+
+    <div id="drawer" class="drawer" aria-hidden="true">
+      <div class="drawer-panel">
+        <button id="closeDrawer" class="icon-btn" type="button">×</button>
+        <h2 id="drawerTitle">客户区域详情</h2>
+        <div id="drawerContent"></div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
